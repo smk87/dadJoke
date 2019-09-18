@@ -1,32 +1,29 @@
 <template>
   <header class="header">
-    <h1 class="title">
-      Dad Jokes
-    </h1>
-    <ul>
-      <li>
-        <nuxt-link to="/">
-          Home
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/jokes">
-          Jokes
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/about">
-          About
-        </nuxt-link>
-      </li>
-    </ul>
+    <v-app-bar color="primary" dark>
+      <v-toolbar-title> Dad Jokes </v-toolbar-title>
+
+      <div class="flex-grow-1" />
+
+      <nuxt-link to="/">
+        Home
+      </nuxt-link>
+
+      <nuxt-link to="/jokes">
+        Jokes
+      </nuxt-link>
+
+      <nuxt-link to="/about">
+        About
+      </nuxt-link>
+    </v-app-bar>
   </header>
 </template>
 
 <script>
 export default {
   name: 'AppHeader'
-}
+};
 </script>
 
 <style>
@@ -50,7 +47,7 @@ export default {
 
 .header a {
   display: inline-block;
-  background: #333;
+  background: transparent;
   color: #fff;
   padding: 0.3rem 1rem;
   margin-right: 0.5rem;

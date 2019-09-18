@@ -1,7 +1,17 @@
 <template>
-  <form @submit.prevent="handleSubmit">
-    <input v-model="text" type="text" placeholder="Search Jokes..." >
-    <input type="submit" value="Search Jokes" >
+  <form
+    class="d-flex justify-space-between align-center"
+    @submit.prevent="handleSubmit"
+  >
+    <v-text-field
+      v-model="text"
+      class="search"
+      type="text"
+      label="Search Jokes..."
+    />
+    <v-btn type="submit" rounded color="primary" value="Search Jokes" dark>
+      Search
+    </v-btn>
   </form>
 </template>
 
@@ -21,3 +31,10 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.search {
+  width: 15rem;
+  flex: none;
+}
+</style>

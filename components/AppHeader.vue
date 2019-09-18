@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <v-app-bar color="primary" dark>
+    <v-app-bar color="indigo darken-4" dark>
       <v-toolbar-title> Dad Jokes </v-toolbar-title>
 
       <div class="flex-grow-1" />

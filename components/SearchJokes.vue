@@ -8,8 +8,15 @@
       class="search"
       type="text"
       label="Search Jokes..."
+      color="indigo darken-4"
     />
-    <v-btn type="submit" rounded color="primary" value="Search Jokes" dark>
+    <v-btn
+      type="submit"
+      rounded
+      color="indigo darken-4"
+      value="Search Jokes"
+      dark
+    >
       Search
     </v-btn>
   </form>

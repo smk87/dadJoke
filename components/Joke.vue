@@ -20,5 +20,6 @@ export default {
   padding: 1rem;
   border: 1px dotted #ccc;
   margin: 1rem 0;
+  color: #1a237e;
 }
 </style>
